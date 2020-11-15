@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatclient.SampleController">
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #bbb;" BorderPane.alignment="CENTER">
+            <children>
+                <JFXTextField fx:id="txtUser" alignment="CENTER" layoutX="111.0" layoutY="137.0" promptText="Kullanıcı Adı">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField fx:id="txtPass" alignment="CENTER" layoutX="111.0" layoutY="207.0" promptText="Parola">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXButton fx:id="btnLogin" layoutX="159.0" layoutY="281.0" onAction="#btnLogin_click" style="-fx-background-color: #cd0;" text="Giriş Yap">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </JFXButton>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="38.0" text="MyChat App">
+                    <font>
+                        <Font name="Bell MT" size="36.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="1.0" layoutY="108.0" prefHeight="0.0" prefWidth="400.0" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
